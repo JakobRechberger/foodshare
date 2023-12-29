@@ -1,0 +1,56 @@
+.main-page {
+    background-color: #357960;
+    padding: 20px;
+    border: 1px solid #ddd;
+}
+h1 {
+    font-family: 'Roboto', sans-serif;
+}
+
+.title-text{
+    margin-left: 30px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 42px;
+
+    color: #FFFFFF;
+}
+
+.title-box {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    justify-content: space-between;
+}
+
+.search {
+    width: 10vw;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.searchTerm {
+    width: 100%;
+    border: 1px solid #FFFFFF;
+    border-right: none;
+    padding: 5px;
+    height: 25px;
+    border-radius: 10px 0 0 10px;
+    outline: none;
+    background-color: #9DBFAF;
+    font-family: "Roboto Light", sans-serif;
+}
+.searchButton {
+    width: 40px;
+    height: 37px;
+    border: 3px solid #FFFFFF;
+    background: #FFFFFF;
+    text-align: center;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 20px;
+}
+
