@@ -1,10 +1,25 @@
 import React from 'react';
-import './mainpage.css'
+import './mainpage.css';
+import {  signOut } from "firebase/auth";
+import {auth} from "../firebase";
+import { useNavigate } from 'react-router-dom';
 import logo from '../assets/media/FoodShare_1.png'
 import search from '../assets/media/search.svg'
 
 
+
 function MainPage() {
+    const navigate = useNavigate();
+
+    const handleLogout = () => {
+        signOut(auth).then(() => {
+            // Sign-out successful.
+            navigate("/");
+            console.log("Signed out successfully")
+        }).catch((error) => {
+            // An error happened.
+        });
+    }
     return (
         <div className={"main-page"}>
             <div className={"title-box"}>
@@ -15,6 +30,11 @@ function MainPage() {
                         <button type="submit" className="searchButton">
                             <img src={search} alt={"search-icon"}/>
                         </button>
+                </div>
+                <div>
+                    <button onClick={handleLogout}>
+                        Logout
+                    </button>
                 </div>
             </div>
 
