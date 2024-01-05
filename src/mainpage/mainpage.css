@@ -1,56 +1,80 @@
 .main-page {
-    background-color: #357960;
-    padding: 20px;
+    background: #FAF9F6;
     border: 1px solid #ddd;
 }
 h1 {
-    font-family: 'Roboto', sans-serif;
+    margin-top: 10px;
+    font-family: 'Prata', serif;
+    text-align: center;
+    justify-self: center;
+}
+.logo, .donation-shop-switch {
+    flex-shrink: 0;
 }
 
-.title-text{
-    margin-left: 30px;
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 25px;
-    line-height: 42px;
-
-    color: #FFFFFF;
-}
 
 .title-box {
     display: flex;
     align-items: center;
-    margin-bottom: 10px;
-    justify-content: space-between;
+    font-family: 'Inter', sans-serif;
+    font-size: large;
+    width: 100vw;
 }
-
-.search {
-    width: 10vw;
-    position: relative;
+.search-box {
+    width: 20vw;
+    height: 6vh;
     display: flex;
     align-items: center;
+    padding: 5px 10px 5px 10px;
+    border: 1px solid #E5E4E2;
+    border-radius: 40px;
 }
-.searchTerm {
-    width: 100%;
-    border: 1px solid #FFFFFF;
-    border-right: none;
-    padding: 5px;
-    height: 25px;
-    border-radius: 10px 0 0 10px;
+.search-box:focus-within{
+    border: 1px solid #232B2B;
+}
+.text-field{
+    border-style: none;
+    color: #232B2B;
     outline: none;
-    background-color: #9DBFAF;
-    font-family: "Roboto Light", sans-serif;
+    background-color: transparent;
+    margin-left: 2%;
+    font-size: medium;
 }
-.searchButton {
-    width: 40px;
-    height: 37px;
-    border: 3px solid #FFFFFF;
-    background: #FFFFFF;
-    text-align: center;
-    color: #fff;
-    border-radius: 0 5px 5px 0;
-    cursor: pointer;
-    font-size: 20px;
+.search-box-svg{
+    height: 20px;
+    width: 20px;
+    filter: invert(10%) sepia(21%) saturate(431%) hue-rotate(131deg) brightness(101%) contrast(87%);
 }
+.donation-shop-switch{
+    background: #FAF9F6;
+
+}
+.left-navbar{
+    display: flex;
+    justify-self: start;
+}
+.right-navbar {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.right-navbar-icon-box{
+    height: 30px;
+    width: 30px;
+    filter: invert(10%) sepia(21%) saturate(431%) hue-rotate(131deg) brightness(101%) contrast(87%);
+}
+.right-icons{
+    display: flex;
+    width: 6vw;
+    justify-content: space-between;
+}
+.intro-image{
+    height: 50vh;
+    width: 100%;
+}
+
+
+
+
+
 
