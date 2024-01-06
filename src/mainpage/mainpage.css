@@ -1,6 +1,7 @@
 .main-page {
     background: #FAF9F6;
     border: 1px solid #ddd;
+    overflow-x: hidden;
 }
 h1 {
     margin-top: 10px;
@@ -22,7 +23,7 @@ h1 {
 }
 .search-box {
     width: 20vw;
-    height: 6vh;
+    height: 6%;
     display: flex;
     align-items: center;
     padding: 5px 10px 5px 10px;
