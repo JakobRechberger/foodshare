@@ -1,5 +1,4 @@
-import React, {useState} from 'react';
-import { NavLink, useNavigate } from 'react-router-dom';
+import React from 'react';
 import { getAuth } from "firebase/auth";
 
 const Profile = () => {
