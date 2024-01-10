@@ -20,6 +20,8 @@ h1 {
     font-family: 'Inter', sans-serif;
     font-size: large;
     width: 100vw;
+    position: -webkit-sticky;
+    position: sticky;
 }
 .search-box {
     width: 20vw;

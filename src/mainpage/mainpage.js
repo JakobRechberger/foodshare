@@ -1,15 +1,20 @@
 import React from 'react';
 import './mainpage.css';
-import AppNavBar from './navbar';
-import titleimage from '../assets/media/img.png'
+
 
 function MainPage() {
     return (
-        <div className={"main-page"}>
-                <AppNavBar></AppNavBar>
+        <div>
+        <div>Design for landing page needed</div>
             <div>
-                <img src={titleimage} alt={"icon"} className={"intro-image"}/>
+                <a href="/onlineshop">Click here for Mainpage </a>
             </div>
+        <div>
+            <a href="/login">Click here for LogIn</a>
+        </div>
+        <div>
+            <a href="/signup">Click here for Signup</a>
+        </div>
 
         </div>
     );

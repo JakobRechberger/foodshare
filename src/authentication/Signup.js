@@ -8,6 +8,8 @@ const Signup = () => {
 
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('');
+    const [name, setName] = useState('');
+    const [role, setRole] = useState('');
 
     const onSubmit = async (e) => {
         e.preventDefault()
@@ -16,6 +18,11 @@ const Signup = () => {
             .then((userCredential) => {
                 // Signed in
                 const user = userCredential.user;
+                /**firebase.database().ref('users/' + user.uid).set({
+                    email: email,
+                    name: name,
+                    role: role // 'organization' or 'donor'
+                });*/
                 console.log(user);
                 navigate("/login")
                 // ...

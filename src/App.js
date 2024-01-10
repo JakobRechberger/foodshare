@@ -1,5 +1,6 @@
 import './App.css';
 import MainPage from "./mainpage/mainpage";
+import OnlineShop from './mainpage/onlineshop';
 import Signup from './authentication/Signup';
 import Login from './authentication/Login';
 import Profile from './authentication/profile.js';
@@ -12,10 +13,11 @@ function App() {
         <div>
           <section>
             <Routes>
-              <Route path="/" element={<MainPage/>}/>
+              <Route path="/onlineshop" element={<OnlineShop/>}/>
               <Route path="/signup" element={<Signup/>}/>
               <Route path="/login" element={<Login/>}/>
               <Route path="/profile" element={<Profile/>}/>
+                <Route path="/" element={<MainPage/>}/>
             </Routes>
           </section>
         </div>

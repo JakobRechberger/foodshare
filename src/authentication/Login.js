@@ -14,7 +14,7 @@ const Login = () => {
             .then((userCredential) => {
                 // Signed in
                 const user = userCredential.user;
-                navigate("/")
+                navigate("/onlineshop")
                 console.log(user);
             })
             .catch((error) => {
