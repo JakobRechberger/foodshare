@@ -1,9 +1,30 @@
 import './App.css';
 import MainPage from "./mainpage/mainpage";
+import OnlineShop from './mainpage/onlineshop';
+import Donation from './mainpage/donation';
+import Signup from './authentication/Signup';
+import Login from './authentication/Login';
+import Profile from './authentication/profile.js';
+import { BrowserRouter as Router} from 'react-router-dom';
+import {Routes, Route} from 'react-router-dom';
 
 function App() {
   return (
-   <MainPage></MainPage>
+      <Router>
+        <div>
+          <section>
+            <Routes>
+              <Route path="/onlineshop" element={<OnlineShop/>}/>
+              <Route path="/donation" element={<Donation/>}/>
+              <Route path="/signup" element={<Signup/>}/>
+              <Route path="/login" element={<Login/>}/>
+              <Route path="/profile" element={<Profile/>}/>
+              <Route path="/" element={<MainPage/>}/>
+            </Routes>
+          </section>
+        </div>
+      </Router>
+
   );
 }
 
