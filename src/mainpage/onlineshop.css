@@ -56,12 +56,14 @@
 .information-link{
     display:flex;
     border-radius: 30px;
-    background-color: gray;
+    background-color: #D9D9D9;
     width: 10vw;
+    height: 2rem;
+    padding: 10px;
     justify-content: center;
-    align-content: center;
-    color: white;
+    align-items: center;
     cursor: default;
+    border-style: none;
 
 }
 .product-list{

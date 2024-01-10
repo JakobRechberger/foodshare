@@ -143,9 +143,9 @@ function OnlineShop() {
                                     et justo duo dolores et ea rebum. Stet clita kasd gubergren,
                                     no sea takimata sanctus est Lorem ipsum dolor sit amet.
                                 </div>
-                                <div className="information-link">
-                                    <p href="/information">Read More </p>
-                                </div>
+                                <button className="information-link">
+                                    <a style={{textDecoration:'none', color:'#000000'}} href="/information">Read More </a>
+                                </button>
 
                             </div>
                         </div>
